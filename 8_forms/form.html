@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>fs2</title>
+		<link rel="stylesheet" href="./css/mycss.css" />
+		<script src="./js/myScript.js"></script>
+	</head>
+	<body>
+		<button onclick="formPage()">Go to form page</button>
+		<button onclick="mainPage()">Go to main page</button>
+		<h1>Form Page</h1>
+		<form onsubmit="event.preventDefault(); handleSubmit();"></formonsubmit>
+			<label for="firstName">First Name</label>
+			<input id="firstName" type="text" name="firstName" required />
+
+			<label for="lastName">Last Name</label>
+			<input id="lastName" type="text" name="lastName" required />
+
+			<label for="favouriteSong">Favourite Song</label>
+			<input id="favouriteSong" type="text" name="favouriteSong" required />
+
+			<input type="submit" value="Continue" />
+		</form>
+	</body>
+</html>
