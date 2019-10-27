@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>fs2</title>
+		<link rel="stylesheet" href="./css/mycss.css" />
+		<script src="./js/myScript.js"></script>
+	</head>
+	<body>
+		<div id="mainPage">
+			<button onclick="goToPage('formPage')">Go to form page</button>
+			<h1>Main Page</h1>
+			<p>This is the main page of the website, feel free to look around</p>
+		</div>
+		<div id="formPage">
+			<button onclick="goToPage('mainPage')">Go back to main page</button>
+			<button onclick="showDisplay('displayPage')">Go to display page</button>
+			<h1>Form Page</h1>
+			<form onsubmit="event.preventDefault(); handleSubmit();"></formonsubmit>
+				<label for="firstName">First Name</label>
+				<input id="firstName" type="text" name="firstName" required />
+	
+				<label for="lastName">Last Name</label>
+				<input id="lastName" type="text" name="lastName" required />
+	
+				<label for="favouriteSong">Favourite Song</label>
+				<input id="favouriteSong" type="text" name="favouriteSong" required />
+	
+				<input type="submit" value="Continue" />
+			</form>
+		</div>
+		<div id="displayPage">
+			<button onclick="goToPage('formPage')">Go to form page</button>
+			<button onclick="goToPage('mainPage')">Go to main page</button>
+			<h1>Display Page</h1>
+			<h4>Name: </h4>
+			<h6 id="showName"></h6>
+			<h4>Last Name: </h4>
+			<h6 id="showLastName"></h6>
+			<h4>Favourite Song: </h4>
+			<h6 id='showSong'></h6>
+		</div>
+		<script>
+			init();
+		</script>
+	</body>
+</html>
