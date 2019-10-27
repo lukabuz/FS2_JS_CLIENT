@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>fs2</title>
+		<link rel="stylesheet" href="./css/mycss.css" />
+		<script src="./js/myScript.js"></script>
+	</head>
+	<body>
+		<div>
+			<h1 id="wordsHeading">All words</h1>
+			<ul id="words"></ul>
+			<input type="text" id="letter" placeholder="List words starting with" />
+			<button id="letterSubmit" onclick="submitLetter()">Filter</button>
+		</div>
+		<div>
+			<h1 id="numbersHeading">All numbers</h1>
+			<ul id="numbers"></ul>
+			<input type="text" id="number" placeholder="List numbers larger than" />
+			<button id="numberSubmit" onclick="submitNumber()">Filter</button>
+		</div>
+		<script>
+			init();
+		</script>
+	</body>
+</html>
