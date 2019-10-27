@@ -12,7 +12,7 @@ initSecondList = arr => {
 };
 initThirdList = arr => {
 	let list = document.getElementById("3");
-	arr.map((key, val) => {
+	arr.map((val, key) => {
 		list.innerHTML += `<dd> ${val} </dd><dt> ${key} </dt>`;
 	});
 };
